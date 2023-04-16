@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c252863d3264814b8c34a1c4a2e762d, type: 3}
+  m_Name: Green_Container (5)_HandGrabCollection
+  m_EditorClassIdentifier: 
+  _interactablesData:
+  - poses: []
+    grabType: 3
+    handAlignment: 1
+    scoringModifier:
+      _maxDistance: 0.1
+      _positionRotationWeight: 0.8
+    pinchGrabRules:
+      _thumbRequirement: 2
+      _indexRequirement: 1
+      _middleRequirement: 1
+      _ringRequirement: 0
+      _pinkyRequirement: 0
+      _unselectMode: 0
+    palmGrabRules:
+      _thumbRequirement: 1
+      _indexRequirement: 2
+      _middleRequirement: 2
+      _ringRequirement: 2
+      _pinkyRequirement: 1
+      _unselectMode: 0
+  - poses: []
+    grabType: 3
+    handAlignment: 1
+    scoringModifier:
+      _maxDistance: 0.1
+      _positionRotationWeight: 0.8
+    pinchGrabRules:
+      _thumbRequirement: 2
+      _indexRequirement: 1
+      _middleRequirement: 1
+      _ringRequirement: 0
+      _pinkyRequirement: 0
+      _unselectMode: 0
+    palmGrabRules:
+      _thumbRequirement: 1
+      _indexRequirement: 2
+      _middleRequirement: 2
+      _ringRequirement: 2
+      _pinkyRequirement: 1
+      _unselectMode: 0
+  - poses: []
+    grabType: 3
+    handAlignment: 1
+    scoringModifier:
+      _maxDistance: 0.1
+      _positionRotationWeight: 0.8
+    pinchGrabRules:
+      _thumbRequirement: 2
+      _indexRequirement: 1
+      _middleRequirement: 1
+      _ringRequirement: 0
+      _pinkyRequirement: 0
+      _unselectMode: 0
+    palmGrabRules:
+      _thumbRequirement: 1
+      _indexRequirement: 2
+      _middleRequirement: 2
+      _ringRequirement: 2
+      _pinkyRequirement: 1
+      _unselectMode: 0
+  - poses:
+    - gripPose:
+        position: {x: -0.11014333, y: -0.027520696, z: 0.0098314}
+        rotation: {x: -0.7743164, y: -0.25839093, z: -0.094972, w: 0.56977963}
+      handPose:
+        _handedness: 0
+        _fingersFreedom: 0200000002000000010000000100000000000000
+        _jointRotations:
+        - {x: 0.37538695, y: -0.42458394, z: 0.007778987, w: 0.82386386}
+        - {x: 0.25823018, y: -0.23422477, z: -0.27375796, w: 0.8963879}
+        - {x: -0.08317556, y: 0.06499316, z: -0.061058894, w: 0.9925365}
+        - {x: 0.0822596, y: -0.060152262, z: -0.0020575598, w: 0.9947914}
+        - {x: 0.03266753, y: -0.021460352, z: -0.090887874, w: 0.99509364}
+        - {x: -0.02593861, y: -0.002762707, z: -0.3661675, w: 0.93018305}
+        - {x: -0.016958944, y: 0.02359909, z: -0.13365245, w: 0.9906018}
+        - {x: -0.010713888, y: 0.025746461, z: -0.13968445, w: 0.9898031}
+        - {x: -0.012868189, y: -0.0004241853, z: -0.3939221, w: 0.9190535}
+        - {x: -0.054067783, y: -0.004221566, z: -0.10925418, w: 0.9925333}
+        - {x: -0.061539434, y: 0.069191776, z: -0.17384636, w: 0.98040926}
+        - {x: -0.040097065, y: -0.008628579, z: -0.34107482, w: 0.9391407}
+        - {x: -0.011502456, y: -0.029668596, z: -0.14708719, w: 0.98861134}
+        - {x: -0.20703594, y: 0.14034279, z: -0.01831183, w: 0.9680414}
+        - {x: 0.08058701, y: 0.022862304, z: -0.19076526, w: 0.97805494}
+        - {x: -0.06294092, y: 0.029029649, z: -0.29511672, w: 0.95294374}
+        - {x: 0.0010631494, y: -0.04885795, z: -0.0982832, w: 0.9939577}
+      scale: 1.0000004
+    grabType: 3
+    handAlignment: 1
+    scoringModifier:
+      _maxDistance: 0.1
+      _positionRotationWeight: 0.8
+    pinchGrabRules:
+      _thumbRequirement: 2
+      _indexRequirement: 1
+      _middleRequirement: 1
+      _ringRequirement: 0
+      _pinkyRequirement: 0
+      _unselectMode: 0
+    palmGrabRules:
+      _thumbRequirement: 1
+      _indexRequirement: 2
+      _middleRequirement: 2
+      _ringRequirement: 2
+      _pinkyRequirement: 1
+      _unselectMode: 0
