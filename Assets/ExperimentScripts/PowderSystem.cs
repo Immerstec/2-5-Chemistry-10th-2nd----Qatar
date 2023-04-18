@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class PowderSystem : MonoBehaviour
 {
-    public SkinnedMeshRenderer powderMeshWhite;
-    public SkinnedMeshRenderer powderMeshBlack;
-    public bool Black_White;
+    public SkinnedMeshRenderer powderMesh;
 
     [Header("Capacity Settings (ML)")]
     [Tooltip("The capacity of this object, how much ML can it hold.")]
@@ -70,22 +68,14 @@ public class PowderSystem : MonoBehaviour
         rateOverTimeCurve.AddKey(1f, angle_180deg_rate);
         emission = pouringParticleSystem.emission;
 
-        UpdateWhiteShader();
-        UpdateBlackShader();
+        UpdateShader();
     }
 
     // Update is called once per frame
     void Update()
     {
         // We'll use blendshapes
-        if (Black_White)
-        {
-            percentageFill = 1 - powderMeshBlack.GetBlendShapeWeight(0) / 100;
-        }
-        if (!Black_White)
-        {
-            percentageFill = 1 - powderMeshWhite.GetBlendShapeWeight(0) / 100;
-        }
+        percentageFill = 1 - powderMesh.GetBlendShapeWeight(0) / 100;
         current_angle = Vector3.Dot(transform.forward, Vector3.down);
         pouring_angle = pouringAngleCurve.Evaluate(percentageFill);
         // Current rate over time (particles per second)
@@ -100,16 +90,7 @@ public class PowderSystem : MonoBehaviour
             if (percentageFill > 0.0f)
             {
                 available -= Time.deltaTime /* * pourPerSecond*/ * current_rateOverTime;
-                if (Black_White)
-                {
-                    UpdateBlackShader();
-                    pouringParticleSystem.startColor = Color.black;
-                }
-                if (!Black_White)
-                {
-                    UpdateWhiteShader();
-                    pouringParticleSystem.startColor = Color.white;
-                }
+                UpdateShader();
             }
         }
         else
@@ -133,29 +114,14 @@ public class PowderSystem : MonoBehaviour
             available += ml;
         else
             available = capacity;
-
-        if (Black_White)
-        {
-            UpdateBlackShader();
-        }
-        if (!Black_White)
-        {
-            UpdateWhiteShader();
-        }
+        UpdateShader();
         print("Filling: " + ml);
     }
 
-    public void UpdateWhiteShader()
+    public void UpdateShader()
     {
         // We'll use blendshapes
         //liquidMat.SetFloat("_Fill", available / capacity);
-        powderMeshWhite.SetBlendShapeWeight(0, Mathf.Abs(available / capacity - 1) * 100);
-    }
-
-    public void UpdateBlackShader()
-    {
-        // We'll use blendshapes
-        //liquidMat.SetFloat("_Fill", available / capacity);
-        powderMeshBlack.SetBlendShapeWeight(0, Mathf.Abs(available / capacity - 1) * 100);
+        powderMesh.SetBlendShapeWeight(0, Mathf.Abs(available / capacity - 1) * 100);
     }
 }
