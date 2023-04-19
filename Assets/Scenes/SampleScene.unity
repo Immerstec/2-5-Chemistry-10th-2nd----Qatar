@@ -74477,7 +74477,7 @@ MonoBehaviour:
   m2O2: {fileID: 1650056886}
   _NalPowderDetectH2O2_ForTest: {fileID: 475758019}
   _NalPowderDetectH2O2: {fileID: 1918484759}
-  UINum: 5
+  UINum: 1
 --- !u!224 &2610906661502483988
 RectTransform:
   m_ObjectHideFlags: 0
