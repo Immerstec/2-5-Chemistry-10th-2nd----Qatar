@@ -5,26 +5,35 @@ using UnityEngine;
 public class NalPowderDetectH2O2 : MonoBehaviour
 {
     ParticleSystem _particleSystem;
-    [SerializeField] LiquidSystem liquidSystem;
+    ParticleSystem NalVFX;
+    private List<ParticleCollisionEvent> collisionEvents;
 
 
     void Start()
     {
         _particleSystem = GetComponent<ParticleSystem>();
-
+        collisionEvents = new List<ParticleCollisionEvent>();
     }
 
-    private void OnParticleTrigger()
+    private void OnParticleCollision(GameObject other)
     {
+        int totalCollisions = _particleSystem.GetCollisionEvents(other, collisionEvents);
+        int i = 0;
 
-        ////Get all particles that entered a box collider
-        //List<ParticleSystem.Particle> enteredParticles = new List<ParticleSystem.Particle>();
-        //int enterCount = _particleSystem.GetTriggerParticles(ParticleSystemTriggerEventType.Enter, enteredParticles);
-        ////int numCollisionEvents = ParticlePhysicsExtensions.GetCollisionEvents(_particleSystem, gameObject, collisionEvents);
-        //if (liquidSystem.available > 0 && enterCount > 0)
-        //{
+        while (i < totalCollisions)
+        {
+            if (collisionEvents[i].colliderComponent.CompareTag("Liquid"))
+            {
+
+                if (collisionEvents[i].colliderComponent.transform.parent.GetComponent<LiquidSystem>().available > 0) 
+                {
+                    if(!collisionEvents[i].colliderComponent.transform.parent.GetChild(10).GetComponent<ParticleSystem>().isPlaying)
+                        collisionEvents[i].colliderComponent.transform.parent.GetChild(10).GetComponent<ParticleSystem>().Play();
 
 
-        //}
+                }
+            }
+            i++;
+        }
     }
 }

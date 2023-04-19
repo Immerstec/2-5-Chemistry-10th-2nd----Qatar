@@ -14480,7 +14480,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be5afabeeeefc9e4795d2415a0ad16d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  liquidSystem: {fileID: 0}
 --- !u!114 &475758020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18325,7 +18324,7 @@ ParticleSystem:
     collidesWithDynamic: 1
     interiorCollisions: 0
   TriggerModule:
-    enabled: 1
+    enabled: 0
     serializedVersion: 2
     inside: 1
     outside: 0
@@ -19285,7 +19284,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 475758018}
   m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 0.088, y: 0.7971, z: 0.066}
+  m_LocalPosition: {x: 0.0495, y: 0.7971, z: 0.2497}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -36749,6 +36748,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1650056885}
+  - component: {fileID: 1650056886}
   m_Layer: 0
   m_Name: MnO2
   m_TagString: Untagged
@@ -36776,6 +36776,18 @@ Transform:
   m_Father: {fileID: 665694187}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1650056886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650056884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae1ef3ed5b8cd6346b93e28588de50c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1652368386
 GameObject:
   m_ObjectHideFlags: 0
@@ -43868,7 +43880,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be5afabeeeefc9e4795d2415a0ad16d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  liquidSystem: {fileID: 0}
 --- !u!1 &1931224587
 GameObject:
   m_ObjectHideFlags: 0
@@ -74462,6 +74473,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkTestTubesFill: {fileID: 1903260009}
+  zn: {fileID: 8446811884001487723}
+  m2O2: {fileID: 1650056886}
   UINum: 5
 --- !u!224 &2610906661502483988
 RectTransform:
@@ -104720,6 +104733,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1550958809730286419}
+  - component: {fileID: 8446811884001487723}
   m_Layer: 0
   m_Name: Zn
   m_TagString: Untagged
@@ -104727,6 +104741,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8446811884001487723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8446811884001487722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f352997752d0ea44592dd4abdd8a19c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8448482578018854524
 MonoBehaviour:
   m_ObjectHideFlags: 0
