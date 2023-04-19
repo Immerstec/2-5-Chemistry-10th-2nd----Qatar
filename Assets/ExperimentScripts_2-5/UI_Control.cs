@@ -9,7 +9,8 @@ public class UI_Control : MonoBehaviour
     [SerializeField] CheckTestTubesFill checkTestTubesFill;
     [SerializeField] Zn zn;
     [SerializeField] M2O2 m2O2;
-
+    [SerializeField] NalPowderDetectH2O2 _NalPowderDetectH2O2_ForTest;
+    [SerializeField] NalPowderDetectH2O2 _NalPowderDetectH2O2;
     public int UINum = 1;
     // Update is called once per frame
     void Update()
@@ -53,8 +54,11 @@ public class UI_Control : MonoBehaviour
                 }
                 break;
             case 6: //6.1 to 7.1
-                UIActivation(UINum);
-                UINum++;
+                if (_NalPowderDetectH2O2_ForTest.IsDone|| _NalPowderDetectH2O2.IsDone)
+                {
+                    UIActivation(UINum);
+                    UINum++;
+                }
                 break;
             case 7: //7.1 to 8.1
                 if (zn.IsDone)

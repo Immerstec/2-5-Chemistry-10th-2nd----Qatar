@@ -74475,6 +74475,8 @@ MonoBehaviour:
   checkTestTubesFill: {fileID: 1903260009}
   zn: {fileID: 8446811884001487723}
   m2O2: {fileID: 1650056886}
+  _NalPowderDetectH2O2_ForTest: {fileID: 475758019}
+  _NalPowderDetectH2O2: {fileID: 1918484759}
   UINum: 5
 --- !u!224 &2610906661502483988
 RectTransform:

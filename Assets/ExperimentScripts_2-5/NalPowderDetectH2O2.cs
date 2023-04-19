@@ -5,9 +5,8 @@ using UnityEngine;
 public class NalPowderDetectH2O2 : MonoBehaviour
 {
     ParticleSystem _particleSystem;
-    ParticleSystem NalVFX;
     private List<ParticleCollisionEvent> collisionEvents;
-
+    [System.NonSerialized] public bool IsDone;
 
     void Start()
     {
@@ -30,7 +29,8 @@ public class NalPowderDetectH2O2 : MonoBehaviour
                     if(!collisionEvents[i].colliderComponent.transform.parent.GetChild(10).GetComponent<ParticleSystem>().isPlaying)
                         collisionEvents[i].colliderComponent.transform.parent.GetChild(10).GetComponent<ParticleSystem>().Play();
 
-
+                    if (!IsDone)
+                        IsDone = true;
                 }
             }
             i++;
