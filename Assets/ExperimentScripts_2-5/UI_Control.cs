@@ -7,9 +7,10 @@ public class UI_Control : MonoBehaviour
     //[SerializeField] LiquidSystem liquidSystem_Beacker_1;
     //[SerializeField] LiquidSystem liquidSystem_Beacker_2;
     [SerializeField] CheckTestTubesFill checkTestTubesFill;
+    [SerializeField] Zn zn;
+    [SerializeField] M2O2 m2O2;
 
     public int UINum = 1;
-
     // Update is called once per frame
     void Update()
     {
@@ -45,13 +46,22 @@ public class UI_Control : MonoBehaviour
                 }
                 break;
             case 5: //5.1 to 6.1
-
+                if (m2O2.IsDone)
+                {
+                    UIActivation(UINum);
+                    UINum++;
+                }
                 break;
             case 6: //6.1 to 7.1
-
+                UIActivation(UINum);
+                UINum++;
                 break;
             case 7: //7.1 to 8.1
-
+                if (zn.IsDone)
+                {
+                    UIActivation(UINum);
+                    UINum++;
+                }
                 break;
 
         }

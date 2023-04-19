@@ -7,7 +7,11 @@ public class ZnDetectH2O2 : MonoBehaviour
     [SerializeField] Texture texture;
     LiquidSystem liquidSystem;
     bool IsDone;
-
+    Zn zn;
+    private void Start()
+    {
+        zn = gameObject.transform.parent.GetComponent<Zn>();
+    }
     private void OnCollisionStay(Collision collision)
     {
         if (!IsDone && collision.gameObject.tag == "Liquid")
@@ -16,6 +20,7 @@ public class ZnDetectH2O2 : MonoBehaviour
             if (liquidSystem.available > 0)
             {
                 IsDone = true;
+                zn.IsDone = true;
                 gameObject.transform.GetChild(0).GetComponent<MeshRenderer>().material.SetTexture("_BaseMap", texture);
             }
         }
