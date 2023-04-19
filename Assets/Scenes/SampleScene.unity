@@ -1045,6 +1045,7 @@ GameObject:
   - component: {fileID: 205777365}
   - component: {fileID: 205777367}
   - component: {fileID: 205777368}
+  - component: {fileID: 205777369}
   m_Layer: 0
   m_Name: Test_Tube_M
   m_TagString: ZnTestTube
@@ -1086,7 +1087,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205777364}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -0.04009999, y: 0.013200045, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1101,8 +1102,8 @@ Transform:
   - {fileID: 379009847}
   - {fileID: 1286580670}
   - {fileID: 1586622491}
-  m_Father: {fileID: 3248558102481079715}
-  m_RootOrder: 7
+  m_Father: {fileID: 1903260008}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!136 &205777367
 CapsuleCollider:
@@ -1166,6 +1167,18 @@ MonoBehaviour:
   TopSurface: {fileID: 1286580670}
   bottomSurface: {fileID: 1586622491}
   floatSurface: {fileID: 379009846}
+--- !u!114 &205777369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205777364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12ce3921b462eb340866423b5afb0718, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &218551385
 GameObject:
   m_ObjectHideFlags: 0
@@ -6499,6 +6512,7 @@ GameObject:
   - component: {fileID: 290358645}
   - component: {fileID: 290358647}
   - component: {fileID: 290358648}
+  - component: {fileID: 290358649}
   m_Layer: 0
   m_Name: Test_Tube_M
   m_TagString: ZnTestTube
@@ -6540,7 +6554,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 290358644}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0.040000007, y: 0.013200045, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6555,8 +6569,8 @@ Transform:
   - {fileID: 429161674}
   - {fileID: 896350670}
   - {fileID: 1716344080}
-  m_Father: {fileID: 3248558102481079715}
-  m_RootOrder: 5
+  m_Father: {fileID: 1903260008}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!136 &290358647
 CapsuleCollider:
@@ -6620,6 +6634,18 @@ MonoBehaviour:
   TopSurface: {fileID: 896350670}
   bottomSurface: {fileID: 1716344080}
   floatSurface: {fileID: 429161673}
+--- !u!114 &290358649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290358644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12ce3921b462eb340866423b5afb0718, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &318900795
 GameObject:
   m_ObjectHideFlags: 0
@@ -32975,6 +33001,7 @@ GameObject:
   - component: {fileID: 857105739}
   - component: {fileID: 857105738}
   - component: {fileID: 857105740}
+  - component: {fileID: 857105741}
   m_Layer: 0
   m_Name: Test_Tube_M
   m_TagString: ZnTestTube
@@ -33016,7 +33043,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 857105735}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -0.07989999, y: 0.013200045, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -33031,8 +33058,8 @@ Transform:
   - {fileID: 1918412555}
   - {fileID: 231337845}
   - {fileID: 1958635601}
-  m_Father: {fileID: 3248558102481079715}
-  m_RootOrder: 8
+  m_Father: {fileID: 1903260008}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!136 &857105738
 CapsuleCollider:
@@ -33112,6 +33139,18 @@ MonoBehaviour:
   TopSurface: {fileID: 231337845}
   bottomSurface: {fileID: 1958635601}
   floatSurface: {fileID: 1918412554}
+--- !u!114 &857105741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857105735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12ce3921b462eb340866423b5afb0718, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &870354804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33142,37 +33181,37 @@ PrefabInstance:
     - target: {fileID: 6435424006787443923, guid: 830d93970b1d5e94693fbe589ccad0b5,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.83310115
+      value: 0.76799387
       objectReference: {fileID: 0}
     - target: {fileID: 6435424006787443923, guid: 830d93970b1d5e94693fbe589ccad0b5,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.23652163
+      value: -0.37534255
       objectReference: {fileID: 0}
     - target: {fileID: 6435424006787443923, guid: 830d93970b1d5e94693fbe589ccad0b5,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.4809912
+      value: -0.44965497
       objectReference: {fileID: 0}
     - target: {fileID: 6435424006787443923, guid: 830d93970b1d5e94693fbe589ccad0b5,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.13655588
+      value: 0.2590634
       objectReference: {fileID: 0}
     - target: {fileID: 6435424006787443923, guid: 830d93970b1d5e94693fbe589ccad0b5,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -15.232
+      value: -20.093
       objectReference: {fileID: 0}
     - target: {fileID: 6435424006787443923, guid: 830d93970b1d5e94693fbe589ccad0b5,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -63.839
+      value: -70.476
       objectReference: {fileID: 0}
     - target: {fileID: 6435424006787443923, guid: 830d93970b1d5e94693fbe589ccad0b5,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 28.14
+      value: 51.548
       objectReference: {fileID: 0}
     - target: {fileID: 6435424006787443925, guid: 830d93970b1d5e94693fbe589ccad0b5,
         type: 3}
@@ -33473,7 +33512,7 @@ PrefabInstance:
     - target: {fileID: 6954731354228278171, guid: c9628a090e9fcb446b2ada1cc6642cd4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 6954731354228278171, guid: c9628a090e9fcb446b2ada1cc6642cd4,
         type: 3}
@@ -71463,6 +71502,55 @@ MonoBehaviour:
   _applyModifier: 1
   _aspects: []
   _scale: 1
+--- !u!1 &1903260007
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1903260008}
+  - component: {fileID: 1903260009}
+  m_Layer: 0
+  m_Name: Tubes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1903260008
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903260007}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2132235909}
+  - {fileID: 290358646}
+  - {fileID: 5201003774407225901}
+  - {fileID: 205777366}
+  - {fileID: 857105737}
+  m_Father: {fileID: 3248558102481079715}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1903260009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903260007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5b112437cc1d844b982ee617d8466ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1918412554
 GameObject:
   m_ObjectHideFlags: 0
@@ -91249,7 +91337,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2072030000
 Transform:
   m_ObjectHideFlags: 0
@@ -91263,7 +91351,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: -23.629, y: -70.958, z: 49.268}
 --- !u!1 &2076820590
 GameObject:
@@ -91790,6 +91878,7 @@ GameObject:
   - component: {fileID: 2132235908}
   - component: {fileID: 2132235910}
   - component: {fileID: 2132235911}
+  - component: {fileID: 2132235912}
   m_Layer: 0
   m_Name: Test_Tube_M
   m_TagString: ZnTestTube
@@ -91831,7 +91920,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2132235907}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0.08000001, y: 0.013200045, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -91846,8 +91935,8 @@ Transform:
   - {fileID: 523316683}
   - {fileID: 925987366}
   - {fileID: 162212546}
-  m_Father: {fileID: 3248558102481079715}
-  m_RootOrder: 4
+  m_Father: {fileID: 1903260008}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!136 &2132235910
 CapsuleCollider:
@@ -91911,6 +92000,18 @@ MonoBehaviour:
   TopSurface: {fileID: 925987366}
   bottomSurface: {fileID: 162212546}
   floatSurface: {fileID: 523316682}
+--- !u!114 &2132235912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132235907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12ce3921b462eb340866423b5afb0718, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2136213873
 GameObject:
   m_ObjectHideFlags: 0
@@ -111418,7 +111519,7 @@ GameObject:
   - component: {fileID: 2610906661488536452}
   - component: {fileID: 2610906661488536453}
   - component: {fileID: 2610906661488536450}
-  - component: {fileID: 2610906661488536454}
+  - component: {fileID: 2610906661488536456}
   m_Layer: 5
   m_Name: StepsCanvas
   m_TagString: Untagged
@@ -111470,36 +111571,6 @@ MonoBehaviour:
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
   m_PresetInfoIsWorld: 1
---- !u!114 &2610906661488536454
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2610906661488536451}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e4a2574677916f4f9dc8ebaa094e75b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  liquidSystem_Beacker_1: {fileID: 0}
-  liquidSystem_Beacker_2: {fileID: 0}
-  Mg_Strip_1: {fileID: 0}
-  Mg_Strip_2: {fileID: 0}
-  Fizzy_C_Tablet_1: {fileID: 0}
-  Fizzy_C_Tablet_2: {fileID: 0}
-  Mg_Strip_Part_2: {fileID: 0}
-  liquidSystem_Beacker_1_Part_2: {fileID: 0}
-  liquidSystem_Beacker_2_Part_2: {fileID: 0}
-  Part_2_2: {fileID: 0}
-  Fe_Strip: {fileID: 0}
-  Spatula_Spoon_Powder: {fileID: 0}
-  Powder_For_Test: {fileID: 0}
-  liquidSystem_Beacker_Part4: {fileID: 0}
-  _NoticeTime: {fileID: 0}
-  Spatula_Spoon_Powder_Part_4: {fileID: 0}
-  Powder_For_Test_Part_4: {fileID: 0}
-  UINum: 19
 --- !u!224 &2610906661488536455
 RectTransform:
   m_ObjectHideFlags: 0
@@ -111529,6 +111600,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0.124, y: 1.05}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2610906661488536456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2610906661488536451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00621d3b4be71744ba471be316b12e09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkTestTubesFill: {fileID: 1903260009}
+  UINum: 5
 --- !u!224 &2610906661502483988
 RectTransform:
   m_ObjectHideFlags: 0
@@ -113040,7 +113125,7 @@ Transform:
   - {fileID: 4059992470629000394}
   - {fileID: 1499524060}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 220, z: 0}
 --- !u!33 &3177780660566487044
 MeshFilter:
@@ -113206,11 +113291,7 @@ Transform:
   - {fileID: 375806022745957590}
   - {fileID: 2441174242290567627}
   - {fileID: 9034578319362435631}
-  - {fileID: 2132235909}
-  - {fileID: 290358646}
-  - {fileID: 5201003774407225901}
-  - {fileID: 205777366}
-  - {fileID: 857105737}
+  - {fileID: 1903260008}
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -123384,6 +123465,7 @@ GameObject:
   - component: {fileID: 5201003774407225903}
   - component: {fileID: 5201003774407225904}
   - component: {fileID: 5201003774407225905}
+  - component: {fileID: 5201003774407225906}
   m_Layer: 0
   m_Name: Test_Tube_M
   m_TagString: ZnTestTube
@@ -127383,7 +127465,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4856707567246796951}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0.013200045, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -127400,8 +127482,8 @@ Transform:
   - {fileID: 2112533113}
   - {fileID: 1134259565}
   - {fileID: 1078719629}
-  m_Father: {fileID: 3248558102481079715}
-  m_RootOrder: 6
+  m_Father: {fileID: 1903260008}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!136 &5201003774407225902
 CapsuleCollider:
@@ -127489,6 +127571,18 @@ MonoBehaviour:
   TopSurface: {fileID: 1134259565}
   bottomSurface: {fileID: 1078719629}
   floatSurface: {fileID: 2112533112}
+--- !u!114 &5201003774407225906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4856707567246796951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12ce3921b462eb340866423b5afb0718, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &5205264671064936910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142028,7 +142122,7 @@ Transform:
   - {fileID: 3086446747011118842}
   - {fileID: 3360353305097755763}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: -70, z: 0}
 --- !u!224 &8401535056752998024
 RectTransform:
