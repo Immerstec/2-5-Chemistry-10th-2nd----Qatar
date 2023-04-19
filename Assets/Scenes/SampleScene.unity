@@ -24419,7 +24419,7 @@ GameObject:
   - component: {fileID: 601473232}
   m_Layer: 0
   m_Name: MnO2_peice_ForTest
-  m_TagString: MnO2Piece
+  m_TagString: ZnPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24500,7 +24500,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: MnO2Piece
+          m_StringArgument: ZnPiece
           m_BoolArgument: 0
         m_CallState: 2
   _whenInteractorViewAdded:
@@ -30121,6 +30121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2560dc0b0cca7474fb1eb22d5ea2f7d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: 893303938e14a8d49946289f2dfa0342, type: 3}
 --- !u!1001 &1349813313
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37552,7 +37553,7 @@ GameObject:
   - component: {fileID: 1803856444}
   m_Layer: 0
   m_Name: MnO2_peice
-  m_TagString: MnO2Piece
+  m_TagString: ZnPiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37633,7 +37634,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: MnO2Piece
+          m_StringArgument: ZnPiece
           m_BoolArgument: 0
         m_CallState: 2
   _whenInteractorViewAdded:
@@ -115218,6 +115219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2560dc0b0cca7474fb1eb22d5ea2f7d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: 893303938e14a8d49946289f2dfa0342, type: 3}
 --- !u!1 &9067596756397287988
 GameObject:
   m_ObjectHideFlags: 0

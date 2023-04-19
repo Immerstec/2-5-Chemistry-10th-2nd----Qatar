@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class ZnDetectH2O2 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] Texture texture;
+    LiquidSystem liquidSystem;
+    bool IsDone;
 
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionStay(Collision collision)
     {
-        
+        if (!IsDone && collision.gameObject.tag == "Liquid")
+        {
+            liquidSystem = collision.gameObject.transform.parent.GetComponent<LiquidSystem>();
+            if (liquidSystem.available > 0)
+            {
+                IsDone = true;
+                gameObject.transform.GetChild(0).GetComponent<MeshRenderer>().material.SetTexture("_BaseMap", texture);
+            }
+        }
     }
 }
