@@ -10,6 +10,9 @@ TagManager:
   - Spatula
   - ZnPiece
   - ZnTestTube
+  - LiquidTrigger
+  - Surface
+  - MnO2Piece
   layers:
   - Default
   - TransparentFX
