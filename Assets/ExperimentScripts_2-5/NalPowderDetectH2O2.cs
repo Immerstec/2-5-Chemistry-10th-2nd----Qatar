@@ -14,7 +14,23 @@ public class NalPowderDetectH2O2 : MonoBehaviour
         _particleSystem = GetComponent<ParticleSystem>();
         collisionEvents = new List<ParticleCollisionEvent>();
     }
+    private void Update()
+    {
 
+        if (liquidSystem && !liquidSystem.gameObject.transform.GetChild(10).GetComponent<ParticleSystem>().isPlaying && liquidSystem.available > 0 && liquidSystem.gameObject.GetComponent<PowderReceiver>().currentPowder > 0)
+        {
+
+            liquidSystem.gameObject.transform.GetChild(10).GetComponent<ParticleSystem>().Play();
+
+            if (!IsDone)
+            {
+
+                liquidSystem.gameObject.GetComponent<Test_Tube>().IsDone = true;
+                IsDone = true;
+
+            }
+        }
+    }
     private void OnParticleCollision(GameObject other)
     {
         int totalCollisions = _particleSystem.GetCollisionEvents(other, collisionEvents);
@@ -25,20 +41,6 @@ public class NalPowderDetectH2O2 : MonoBehaviour
             if (collisionEvents[i].colliderComponent.CompareTag("Liquid"))
             {
                 liquidSystem = collisionEvents[i].colliderComponent.transform.parent.GetComponent<LiquidSystem>();
-                
-                if (liquidSystem.available > 0) 
-                {
-                    if(!liquidSystem.gameObject.transform.GetChild(10).GetComponent<ParticleSystem>().isPlaying)
-                        liquidSystem.gameObject.transform.GetChild(10).GetComponent<ParticleSystem>().Play();
-                    
-
-                    if(!liquidSystem.gameObject.GetComponent<Test_Tube>().IsDone)
-                        liquidSystem.gameObject.GetComponent<Test_Tube>().IsDone = true;
-
-
-                    if (!IsDone)
-                        IsDone = true;
-                }
             }
             i++;
         }

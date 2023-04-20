@@ -13,12 +13,12 @@ public class PowderPouringSystem : MonoBehaviour
     public int totalCollided = 0;
     private void Start()
     {
-        powderSystem = transform.parent.GetComponent<PowderSystem>();
+        //powderSystem = transform.parent.GetComponent<PowderSystem>();
         pouringPS = GetComponent<ParticleSystem>();
         collisionEvents = new List<ParticleCollisionEvent>();
 
         //mlpp = liquidSystem.pourPerSecond / pouringPS.emission.rateOverTime.constant;
-        mlpp = powderSystem.pourPerSecond; // Changed to this because we will be using it as pour per particle instead of sec
+       // mlpp = powderSystem.pourPerSecond; // Changed to this because we will be using it as pour per particle instead of sec
     }
     private void OnParticleCollision(GameObject other)
     {

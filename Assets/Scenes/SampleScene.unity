@@ -753,7 +753,7 @@ Transform:
   - {fileID: 657298511}
   - {fileID: 1348444072}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: -60, z: 0}
 --- !u!1 &54099879
 GameObject:
@@ -1598,7 +1598,7 @@ Transform:
   - {fileID: 1932219407}
   - {fileID: 550641383}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: -60, z: 0}
 --- !u!1 &147251612
 GameObject:
@@ -2311,6 +2311,7 @@ GameObject:
   - component: {fileID: 205777367}
   - component: {fileID: 205777368}
   - component: {fileID: 205777369}
+  - component: {fileID: 205777370}
   m_Layer: 0
   m_Name: Test_Tube_M
   m_TagString: ZnTestTube
@@ -2446,6 +2447,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ce3921b462eb340866423b5afb0718, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsDone: 0
+--- !u!114 &205777370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205777364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a46c17441e514844a952a3a93ac62a18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredPowder: 500
+  currentPowder: 0
+  percentage: 0
+  normalizedPercentage: 0
 --- !u!1 &212551247
 GameObject:
   m_ObjectHideFlags: 0
@@ -3286,6 +3304,7 @@ GameObject:
   - component: {fileID: 290358647}
   - component: {fileID: 290358648}
   - component: {fileID: 290358649}
+  - component: {fileID: 290358650}
   m_Layer: 0
   m_Name: Test_Tube_M
   m_TagString: ZnTestTube
@@ -3421,6 +3440,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ce3921b462eb340866423b5afb0718, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsDone: 0
+--- !u!114 &290358650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290358644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a46c17441e514844a952a3a93ac62a18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredPowder: 500
+  currentPowder: 0
+  percentage: 0
+  normalizedPercentage: 0
 --- !u!1 &318900795
 GameObject:
   m_ObjectHideFlags: 0
@@ -14461,6 +14497,7 @@ GameObject:
   - component: {fileID: 475758021}
   - component: {fileID: 475758020}
   - component: {fileID: 475758019}
+  - component: {fileID: 475758024}
   m_Layer: 0
   m_Name: PowderForTset
   m_TagString: Untagged
@@ -19289,8 +19326,23 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &475758024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475758018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa0d9573637d564c8e807890d1e97ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mlpp: 10
+  colls: 0
+  totalCollided: 0
 --- !u!1 &523316682
 GameObject:
   m_ObjectHideFlags: 0
@@ -25260,7 +25312,7 @@ Transform:
   - {fileID: 1650056885}
   - {fileID: 1488240483}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: -60, z: 0}
 --- !u!1 &670188791
 GameObject:
@@ -26560,6 +26612,7 @@ GameObject:
   - component: {fileID: 857105738}
   - component: {fileID: 857105740}
   - component: {fileID: 857105741}
+  - component: {fileID: 857105742}
   m_Layer: 0
   m_Name: Test_Tube_M
   m_TagString: ZnTestTube
@@ -26711,6 +26764,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ce3921b462eb340866423b5afb0718, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsDone: 0
+--- !u!114 &857105742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857105735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a46c17441e514844a952a3a93ac62a18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredPowder: 500
+  currentPowder: 0
+  percentage: 0
+  normalizedPercentage: 0
 --- !u!1001 &870354804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27314,6 +27384,7 @@ GameObject:
   - component: {fileID: 932345289}
   - component: {fileID: 932345288}
   - component: {fileID: 932345287}
+  - component: {fileID: 932345291}
   m_Layer: 0
   m_Name: 'Test_Tube_M '
   m_TagString: ZnTestTube
@@ -27360,6 +27431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ce3921b462eb340866423b5afb0718, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsDone: 0
 --- !u!114 &932345288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27449,6 +27521,22 @@ LODGroup:
     renderers:
     - renderer: {fileID: 802092135}
   m_Enabled: 1
+--- !u!114 &932345291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932345285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a46c17441e514844a952a3a93ac62a18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredPowder: 500
+  currentPowder: 0
+  percentage: 0
+  normalizedPercentage: 0
 --- !u!1 &937374751
 GameObject:
   m_ObjectHideFlags: 0
@@ -27655,7 +27743,7 @@ PrefabInstance:
     - target: {fileID: 6954731354228278171, guid: c9628a090e9fcb446b2ada1cc6642cd4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 6954731354228278171, guid: c9628a090e9fcb446b2ada1cc6642cd4,
         type: 3}
@@ -35679,7 +35767,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1498806760
 GameObject:
@@ -37144,7 +37232,8 @@ Transform:
   m_LocalPosition: {x: -0.0021, y: 0.0128, z: 0}
   m_LocalScale: {x: 0.02, y: 0.001, z: 0.02}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1215066402021712545}
   m_Father: {fileID: 6325380330385063172}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -39053,8 +39142,8 @@ GameObject:
   - component: {fileID: 1918484758}
   - component: {fileID: 1918484755}
   - component: {fileID: 1918484757}
-  - component: {fileID: 1918484756}
   - component: {fileID: 1918484759}
+  - component: {fileID: 1918484760}
   m_Layer: 0
   m_Name: Powder
   m_TagString: Untagged
@@ -43769,18 +43858,6 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!114 &1918484756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1918484754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c8f5ab81cf7b614599b3a89d78b2ae2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!199 &1918484757
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -43880,6 +43957,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be5afabeeeefc9e4795d2415a0ad16d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1918484760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918484754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa0d9573637d564c8e807890d1e97ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mlpp: 10
+  colls: 0
+  totalCollided: 0
 --- !u!1 &1931224587
 GameObject:
   m_ObjectHideFlags: 0
@@ -54283,7 +54375,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: -23.629, y: -70.958, z: 49.268}
 --- !u!1 &2076820590
 GameObject:
@@ -54789,6 +54881,7 @@ GameObject:
   - component: {fileID: 2132235910}
   - component: {fileID: 2132235911}
   - component: {fileID: 2132235912}
+  - component: {fileID: 2132235913}
   m_Layer: 0
   m_Name: Test_Tube_M
   m_TagString: ZnTestTube
@@ -54924,6 +55017,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ce3921b462eb340866423b5afb0718, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsDone: 0
+--- !u!114 &2132235913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132235907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a46c17441e514844a952a3a93ac62a18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredPowder: 500
+  currentPowder: 0
+  percentage: 0
+  normalizedPercentage: 0
 --- !u!1 &2136213873
 GameObject:
   m_ObjectHideFlags: 0
@@ -62000,17 +62110,17 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1988085080487393307}
-  m_LocalRotation: {x: 0, y: 0.9396927, z: -0, w: -0.3420201}
-  m_LocalPosition: {x: -0.232, y: 0.596, z: 0.0833}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.3420201, z: -0, w: 0.9396927}
+  m_LocalPosition: {x: 5.7549996, y: -43.299995, z: 0.91999996}
+  m_LocalScale: {x: 50, y: 1000, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7161586845016350838}
   - {fileID: 2493092487344524411}
   - {fileID: 2709964280701194261}
   - {fileID: 25173236}
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 1765456144}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 220, z: 0}
 --- !u!222 &1226076377871558881
 CanvasRenderer:
@@ -75981,7 +76091,7 @@ Transform:
   - {fileID: 4059992470629000394}
   - {fileID: 1499524060}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 220, z: 0}
 --- !u!33 &3177780660566487044
 MeshFilter:
@@ -76149,7 +76259,7 @@ Transform:
   - {fileID: 9034578319362435631}
   - {fileID: 1903260008}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3252351593685141698
 GameObject:
@@ -91616,7 +91726,7 @@ Transform:
   - {fileID: 1918484758}
   - {fileID: 804289767}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: -90, y: -90, z: 0}
 --- !u!114 &5658988012937290819
 MonoBehaviour:
@@ -93132,7 +93242,7 @@ Transform:
   - {fileID: 1550958809730286419}
   - {fileID: 1866507820}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: -60, z: 0}
 --- !u!4 &6213194792996883367
 Transform:
@@ -104647,7 +104757,7 @@ Transform:
   - {fileID: 3086446747011118842}
   - {fileID: 3360353305097755763}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: -70, z: 0}
 --- !u!224 &8401535056752998024
 RectTransform:
