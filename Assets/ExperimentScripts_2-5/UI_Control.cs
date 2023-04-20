@@ -19,21 +19,21 @@ public class UI_Control : MonoBehaviour
         switch (UINum)
         {
             case 1: //1.1 to 2.1
-                if (checkTestTubesFill.NumFilledTubes >=1)
+                if (checkTestTubesFill.NumFilledTubes >=1 )
                 {
                        UIActivation(UINum);
                        UINum++;
                 }
                 break;
             case 2: //2.1 to 3.1
-                if (checkTestTubesFill.NumFilledTubes >= 2)
+                if (checkTestTubesFill.NumFilledTubes >= 2 )
                 {
                     UIActivation(UINum);
                     UINum++;
                 }
                 break;
             case 3: //3.1 to 4.1
-                if (checkTestTubesFill.NumFilledTubes >= 3)
+                if (checkTestTubesFill.NumFilledTubes >= 3 )
                 {
                     UIActivation(UINum);
                     UINum++;

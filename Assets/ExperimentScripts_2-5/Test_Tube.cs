@@ -7,6 +7,7 @@ public class Test_Tube : MonoBehaviour
     bool IsFilled;
     LiquidSystem liquidSystem;
     CheckTestTubesFill checkTestTubesFill;
+    [SerializeField] public bool IsDone;
     private void Start()
     {
      
@@ -16,7 +17,7 @@ public class Test_Tube : MonoBehaviour
 
     private void Update()
     {
-        if (!IsFilled && liquidSystem.available > 50) 
+        if (!IsFilled && (liquidSystem.available > 50|| IsDone)) 
         {
             IsFilled = true;
             checkTestTubesFill.NumFilledTubes++;

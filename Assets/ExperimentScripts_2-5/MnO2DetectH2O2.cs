@@ -13,19 +13,30 @@ public class MnO2DetectH2O2 : MonoBehaviour
     {
         m2O2 = gameObject.transform.parent.GetComponent<M2O2>();
     }
-    private void OnCollisionStay(Collision collision)
+    private void Update()
     {
-        if (!IsDone && collision.gameObject.tag == "Liquid")
+
+        if (!IsDone && gameObject.tag == "Liquid" && liquidSystem.available > 0)
+        {
+            IsDone = true;
+            m2O2.IsDone = true;
+            liquidSystem.gameObject.GetComponent<Test_Tube>().IsDone =true;
+            _particleSystem.Play();
+        }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (gameObject.tag != "Liquid" && collision.gameObject.tag == "Liquid")
         {
             liquidSystem = collision.gameObject.transform.parent.GetComponent<LiquidSystem>();
             _particleSystem = liquidSystem.gameObject.transform.GetChild(11).GetComponent<ParticleSystem>();
-            if (liquidSystem.available > 0)
-            {
-                IsDone = true;
-                m2O2.IsDone =true;
-                _particleSystem.Play();
 
+            if (liquidSystem)
+            {
+                gameObject.transform.SetParent(liquidSystem.gameObject.transform);
+                gameObject.tag = "Liquid";
             }
         }
     }
+
 }
