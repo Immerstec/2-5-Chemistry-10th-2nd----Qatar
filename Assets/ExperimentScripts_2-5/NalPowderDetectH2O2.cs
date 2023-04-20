@@ -7,6 +7,7 @@ public class NalPowderDetectH2O2 : MonoBehaviour
     ParticleSystem _particleSystem;
     private List<ParticleCollisionEvent> collisionEvents;
     [System.NonSerialized] public bool IsDone;
+    LiquidSystem liquidSystem;
 
     void Start()
     {
@@ -23,11 +24,17 @@ public class NalPowderDetectH2O2 : MonoBehaviour
         {
             if (collisionEvents[i].colliderComponent.CompareTag("Liquid"))
             {
-
-                if (collisionEvents[i].colliderComponent.transform.parent.GetComponent<LiquidSystem>().available > 0) 
+                liquidSystem = collisionEvents[i].colliderComponent.transform.parent.GetComponent<LiquidSystem>();
+                
+                if (liquidSystem.available > 0) 
                 {
-                    if(!collisionEvents[i].colliderComponent.transform.parent.GetChild(10).GetComponent<ParticleSystem>().isPlaying)
-                        collisionEvents[i].colliderComponent.transform.parent.GetChild(10).GetComponent<ParticleSystem>().Play();
+                    if(!liquidSystem.gameObject.transform.GetChild(10).GetComponent<ParticleSystem>().isPlaying)
+                        liquidSystem.gameObject.transform.GetChild(10).GetComponent<ParticleSystem>().Play();
+                    
+
+                    if(!liquidSystem.gameObject.GetComponent<Test_Tube>().IsDone)
+                        liquidSystem.gameObject.GetComponent<Test_Tube>().IsDone = true;
+
 
                     if (!IsDone)
                         IsDone = true;
